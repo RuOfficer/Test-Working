@@ -1,4 +1,14 @@
-@mixin ff-main() {
-  font-family: $primory-font;
-  font-weight: $fw-main;
+// -----------шрифты-----------
+
+@mixin ff-main($ff, $fw-4) {
+  font-family: $ff;
+  font-weight: $fw-9;
+}
+@mixin ff-secondary($ff, $fw-7) {
+  font-family: $ff;
+  font-weight: $fw-7;
+}
+@mixin ff-last($ff, $fw-4) {
+  font-family: $ff;
+  font-weight: $fw-4;
 }

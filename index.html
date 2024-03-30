@@ -11,39 +11,59 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
-
     <title>My project</title>
   </head>
   <body>
-    <div class="container">
-      <nav class="header">
-        <div class="header__search">
-          <img class="header__logo" src="/img/header/logo.svg" alt="logo" />
+    <!-- --------------------панель навигации header------------------- -->
+    <nav class="header">
+      <div class="header__search">
+        <img class="header__logo" src="/img/header/logo.svg" alt="logo" />
+        <img
+          class="header__img-glass"
+          src="/img/header/glass.svg"
+          alt="glass"
+        />
+      </div>
+      <div class="header__basket">
+        <img
+          class="header__img-menu"
+          src="/img/header/burger-menu.png"
+          alt="menu"
+        />
+        <img
+          class="header__img-human"
+          src="/img/header/human.svg"
+          alt="human"
+        />
+        <img
+          class="header__img-basket"
+          src="/img/header/basket.svg"
+          alt="basket"
+        />
+      </div>
+    </nav>
+
+    <!-- -------------------баннер компании------------------ -->
+    <main>
+      <section class="banner">
+        <div class="banner__block-img">
           <img
-            class="header__img-glass"
-            src="/img/header/glass.svg"
-            alt="glass"
+            class="banner__img"
+            src="/img/banner/Layer_57-removebg-preview 1.png"
+            alt="man-img"
           />
         </div>
-        <div class="header__basket">
-          <img
-            class="header__img-menu"
-            src="/img/header/burger-menu.png"
-            alt="menu"
-          />
-          <img
-            class="header__img-human"
-            src="/img/header/human.svg"
-            alt="human"
-          />
-          <img
-            class="header__img-basket"
-            src="/img/header/basket.svg"
-            alt="basket"
-          />
+        <div class="banner__brand">
+          <div class="banner__rectangle"></div>
+          <div class="banner__right-block">
+            <h1 class="banner__title">THE BRAND</h1>
+            <p class="banner__text">
+              OF LUXERIOUS <span class="banner__text--span">FASHION</span>
+            </p>
+          </div>
         </div>
-      </nav>
-    </div>
+      </section>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
