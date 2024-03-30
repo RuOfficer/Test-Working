@@ -50,6 +50,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 65px;
 }
 .banner__block-img {
   width: 800px;
@@ -89,5 +90,94 @@
   line-height: 38.4px;
 }
 .banner__text--span {
+  color: #f16d7f;
+}
+
+.offer {
+  width: 1140px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 260px 30px 180px;
+  grid-template-rows: 260px 180px;
+  justify-items: center;
+  margin: auto;
+  gap: 30px;
+}
+
+.offer > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.offer > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.offer > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.offer > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.offer > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.offer > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.offer__card {
+  width: 100%;
+}
+.offer__card--women {
+  background-image: url(/img/offer/card_1.png);
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.offer__price {
+  background-color: rgba(33, 22, 22, 0.7);
+  width: 100%;
+  height: 100%;
+}
+.offer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.offer__text {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  line-height: 19.2px;
+  color: #ffffff;
+}
+.offer__title {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
   color: #f16d7f;
 }
