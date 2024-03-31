@@ -83,29 +83,33 @@
 //  <!-- -----------секция предложения---------- -->
 
 .offer {
-  width: 1140px;
+  width: 71%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 260px 180px;
   justify-items: center;
-  margin: auto;
   gap: 30px;
+  margin: auto;
 
   &__card {
     width: 100%;
+    &:hover {
+      border: 3px solid $rc;
+    }
   }
+
   &__card--women {
     background-image: url(/img/offer/card_1.png);
-
+    background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   &__price {
     background-color: rgba(33, 22, 22, 0.7);
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &__wrap {
     display: flex;
@@ -122,5 +126,15 @@
     font-size: 24px;
     line-height: 28.8px;
     color: $rc;
+  }
+  &__card--man {
+    background-image: url(/img/offer/card_2.png);
+  }
+  &__card--child {
+    background-image: url(/img/offer/card_3.png);
+  }
+  &__card--bottom {
+    grid-column: span 3;
+    background-image: url(/img/offer/card_4.png);
   }
 }
