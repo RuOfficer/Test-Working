@@ -8,7 +8,11 @@
   font-family: $ff;
   font-weight: $fw-7;
 }
-@mixin ff-last($ff, $fw-4) {
+@mixin ff-fourth($ff, $fw-4) {
   font-family: $ff;
   font-weight: $fw-4;
+}
+@mixin ff-last($ff, $fw-3) {
+  font-family: $ff;
+  font-weight: $fw-3;
 }

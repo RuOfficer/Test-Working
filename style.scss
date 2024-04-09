@@ -60,7 +60,7 @@
   &__rectangle {
     width: 12px;
     height: 92px;
-    background-color: #f16d7f;
+    background-color: $rc;
   }
   &__right-block {
   }
@@ -118,7 +118,7 @@
     align-items: center;
   }
   &__text {
-    @include ff-last($ff, $fw-4);
+    @include ff-fourth($ff, $fw-4);
     line-height: 19.2px;
     color: $wc;
   }
@@ -147,9 +147,8 @@
   height: 1395px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 75px 581px 581px 210px;
+  grid-template-rows: 75px 581px 581px 75px;
   gap: 30px;
-
   margin: auto;
   &__title {
     display: flex;
@@ -158,14 +157,52 @@
     grid-column: span 3;
   }
   &__heading {
-    @include ff-last($ff, $fw-4);
+    @include ff-fourth($ff, $fw-4);
     font-size: 30px;
     line-height: 36px;
   }
   &__text {
-    @include ff-last($ff, $fw-4);
+    @include ff-fourth($ff, $fw-4);
     font-size: 14px;
     line-height: 16.8px;
     color: #5d5d5d;
+  }
+  &__wrap-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 18px;
+    padding-left: 16px;
+  }
+  &__brand {
+    @include ff-fourth($ff, $fw-4);
+    font-size: 13px;
+    line-height: 15.6px;
+  }
+  &__description {
+    @include ff-last($ff, $fw-3);
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #5d5d5d;
+  }
+  &__price {
+    @include ff-fourth($ff, $fw-4);
+    line-height: 19.2px;
+    color: $rc;
+  }
+  &__wrap-link {
+    grid-column: span 3;
+    width: 212px;
+    height: 48px;
+    border: 1px solid #ff6a6a;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link {
+    @include ff-fourth($ff, $fw-4);
+    line-height: 19.2px;
+    color: #f26376;
   }
 }
